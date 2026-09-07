@@ -803,3 +803,71 @@ footer {
     }
 
 }
+/* Nepal Date & Time */
+.nepal-datetime {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 8px 14px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.nepal-flag {
+    font-size: 32px;
+    display: inline-block;
+    animation: flagWave 1.2s ease-in-out infinite;
+    transform-origin: left center;
+}
+
+#nepali-date {
+    font-weight: 600;
+}
+
+#nepal-time {
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+@keyframes flagWave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-6deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .nepal-datetime {
+        top: 10px;
+        right: 10px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .nepal-flag {
+        font-size: 25px;
+    }
+}
