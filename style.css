@@ -261,7 +261,7 @@ header {
 }
 
 .profile-info p {
-    color: var(--light-text);
+    color: var(--dark-text);
 }
 
 .status {
