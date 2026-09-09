@@ -803,3 +803,21 @@ footer {
     }
 
 }
+.nepal-time {
+    position: fixed;
+    top: 15px;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 9999;
+    animation: floatNepalTime 15s linear infinite;
+}
+
+@keyframes floatNepalTime {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
