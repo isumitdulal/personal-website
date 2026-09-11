@@ -810,7 +810,7 @@ footer {
     font-size: 15px;
     font-weight: 600;
     z-index: 9999;
-    
+    animation: floatNepalTime 15s linear infinite;
 }
 
 @keyframes floatNepalTime {
